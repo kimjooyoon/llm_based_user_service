@@ -1,1 +1,8 @@
-rootProject.name = "user_api"
+rootProject.name = "user-service"
+
+include(
+    "core",
+    "message",
+    "bootstrap-idp",
+    "bootstrap-resource"
+)

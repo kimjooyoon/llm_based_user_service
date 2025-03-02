@@ -1,11 +1,20 @@
-HELP.md
-.gradle
+# Gradle
+.gradle/
 build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-### STS ###
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+# Eclipse
 .apt_generated
 .classpath
 .factorypath
@@ -17,24 +26,46 @@ bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
-
-### NetBeans ###
+# NetBeans
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
 
-### VS Code ###
+# VS Code
 .vscode/
 
-### Kotlin ###
-.kotlin
+# Mac OS
+.DS_Store
+
+# Logs
+logs/
+*.log
+
+# Local configuration
+application-local.yml
+application-local.properties
+
+# Security keys and certificates
+*.jks
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Generated files
+generated/
+
+# Dependency lock files
+/*.lock
+
+# Test reports
+test-results/
+
+# Temporary files
+tmp/
+temp/
+
+# Docker volumes
+docker/volumes/
